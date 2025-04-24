@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style/estilosCarrito.css">
+</head>
+<body>
+
+    <!-- Menú Superior -->
+    <nav class="navbar">
+        <div class="logo">Los 6 Hermanos</div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+            <button><img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="Buscar" width="20"></button>
+        </div>
+        <div class="icons">
+            <a href="carrito.html"><img src="imgs/carrito.png" alt="Carrito"></a>
+            <div class="menu-icon">
+                <img src="imgs/menu.png" alt="Menú">
+                <div class="sidebar">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li style="text-align: center;"><a>Mi Cuenta</a></li>
+                        <li><br></li>
+                        <li><a href="catalogo.html">Inicio</a></li>
+                        <li><a href="iniciar_sesion.html">Iniciar Sesion</a></li>
+                        <li><a href="registro.html">Crear Cuenta</a></li>
+                        <li><a href="ajustes.html">Configuración</a></li>
+                        <li><a href="Favoritos.html">Favoritos</a></li>
+                        <li><a href="Compra.html">Mis compras</a></li>
+                        <li><a href="propuesta.html">Notificaciones</a></li>
+                        <li><a href="IngresoProd.html">Ingresar Producto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="cart">
+        <div class="cart-item">
+            <img src="imgs/pantalon.jpg" alt="Pantalón Café Claro">
+            <div class="details">
+                <h3>Pantalón Café Claro</h3>
+                <p class="desc">Pantalón de tela resistente, ideal para uso diario.</p>
+                <p>Precio: <span class="price">$240.00</span></p>
+                <label for="size1">Talla:</label>
+                <select id="size1" class="size">
+                    <option value="S">S</option>
+                    <option value="M" selected>M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="qty1">Cantidad:</label>
+                <input type="number" id="qty1" class="qty" value="1" min="1">
+                <button class="remove-btn">Eliminar</button>
+            </div>
+        </div>
+        
+        <div class="cart-item">
+            <img src="imgs/camisa.jpg" alt="Playera Blanca Casual">
+            <div class="details">
+                <h3>Playera Blanca Casual</h3>
+                <p class="desc">Cómoda playera de algodón 100%, perfecta para cualquier ocasión.</p>
+                <p>Precio: <span class="price">$100.00</span></p>
+                <label for="size2">Talla:</label>
+                <select id="size2" class="size">
+                    <option value="S">S</option>
+                    <option value="M" selected>M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="qty2">Cantidad:</label>
+                <input type="number" id="qty2" class="qty" value="1" min="1">
+                <button class="remove-btn">Eliminar</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="imgs/vestido.jpeg" alt="Vestido Azul">
+            <div class="details">
+                <h3>Vestido Azul</h3>
+                <p class="desc">Elegante vestido azul con cinturón, ideal para eventos formales.</p>
+                <p>Precio: <span class="price">$400.00</span></p>
+                <label for="size3">Talla:</label>
+                <select id="size3" class="size">
+                    <option value="S">S</option>
+                    <option value="M" selected>M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="qty3">Cantidad:</label>
+                <input type="number" id="qty3" class="qty" value="1" min="1">
+                <button class="remove-btn">Eliminar</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-total">
+        <h2>Total: <span id="total-price">$740.00</span></h2>
+        <button class="checkout-btn">Finalizar Compra</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

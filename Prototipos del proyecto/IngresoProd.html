@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/estilosIngreso.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Los 6 Hermanos</div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+            <button><img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="Buscar" width="20"></button>
+        </div>
+        <div class="icons">
+            <a href="carrito.html"><img src="imgs/carrito.png" alt="Carrito"></a>
+            <div class="menu-icon">
+                <img src="imgs/menu.png" alt="Menú">
+                <div class="sidebar">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li style="text-align: center;"><a>Mi Cuenta</a></li>
+                        <li><br></li>
+                        <li><a href="catalogo.html">Inicio</a></li>
+                        <li><a href="iniciar_sesion.html">Iniciar Sesion</a></li>
+                        <li><a href="registro.html">Crear Cuenta</a></li>
+                        <li><a href="ajustes.html">Configuración</a></li>
+                        <li><a href="Favoritos.html">Favoritos</a></li>
+                        <li><a href="Compra.html">Mis compras</a></li>
+                        <li><a href="propuesta.html">Notificaciones</a></li>
+                        <li><a href="IngresoProd.html">Ingresar Producto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+  
+    <main>
+        <section class="product-form">
+          <h2>Nuevo Producto</h2>
+          <input type="text" id="nombre" placeholder="Nombre del producto" required>
+          <textarea id="descripcion" placeholder="Descripción del producto" rows="3" required></textarea>
+          <input type="number" id="precio" placeholder="Precio" required>
+          
+          <label for="imagen">Imagen del producto:</label>
+          <input type="file" id="imagen" accept="image/*">
+  
+          <label for="categoria">Categoría:</label>
+          <select id="categoria" required>
+            <option value="">Seleccione una categoría</option>
+            <option value="Falda">Ropa</option>
+            <option value="Camiseta">Camiseta</option>
+            <option value="Pantalon">Pantalon</option>
+            <option value="Sweater">Sweater</option>
+            <option value="otros">Otros</option>
+          </select>
+  
+          <button onclick="agregarProducto()">Agregar al Catálogo</button>
+        </section>
+    
+        <section class="catalog" id="catalogo">
+          <!-- Productos agregados aparecerán aquí -->
+        </section>
+      </main>
+</html>

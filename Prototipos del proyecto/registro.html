@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgistrate!!</title>
+    <link rel="stylesheet" href="style/style_registro.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+      <div class="logo">Los 6 Hermanos</div>
+      <div class="search-container">
+          <input type="text" placeholder="Buscar...">
+          <button><img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="Buscar" width="20"></button>
+      </div>
+      <div class="icons">
+          <a href="carrito.html"><img src="imgs/carrito.png" alt="Carrito"></a>
+          <div class="menu-icon">
+              <img src="imgs/menu.png" alt="Menú">
+              <div class="sidebar">
+                  <ul>
+                      <li><img src="" alt=""></li>
+                      <li style="text-align: center;"><a>Mi Cuenta</a></li>
+                      <li><br></li>
+                      <li><a href="catalogo.html">Inicio</a></li>
+                      <li><a href="iniciar_sesion.html">Iniciar Sesion</a></li>
+                      <li><a href="registro.html">Crear Cuenta</a></li>
+                      <li><a href="ajustes.html">Configuración</a></li>
+                      <li><a href="Favoritos.html">Favoritos</a></li>
+                      <li><a href="Compra.html">Mis compras</a></li>
+                      <li><a href="propuesta.html">Notificaciones</a></li>
+                      <li><a href="IngresoProd.html">Ingresar Producto</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+    <div class="container">
+        <br><br><br><br><br><br><br><br>
+        <form action="procesar_registro.php" method="POST" class="registro-form">
+          <h2>Registro de Usuario</h2>
+    
+          <div class="input-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+    
+          <div class="input-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+    
+          <div class="input-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="##########" required>
+          </div>
+    
+          <div class="input-group">
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado" required>
+              <option value="">Selecciona tu estado</option>
+              <option value="cdmx">Ciudad de México</option>
+              <option value="edomex">Estado de México</option>
+              <option value="jalisco">Jalisco</option>
+              <option value="nuevoleon">Nuevo León</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+    
+          <div class="input-group">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+    
+          <div class="input-group">
+            <label>Género</label>
+            <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+            <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+            <label><input type="radio" name="genero" value="otro"> Otro</label>
+          </div>
+    
+          <div class="input-group">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+          </div>
+    
+          <div class="input-group">
+            <label for="confirmar">Confirmar contraseña</label>
+            <input type="password" id="confirmar" name="confirmar" required>
+          </div>
+    
+          <div class="input-group">
+            <label>
+              <input type="checkbox" name="terminos" required>
+              Acepto los <a href="#">términos y condiciones</a>
+            </label>
+          </div>
+    
+          <input type="submit" value="Registrarse">
+        </form>
+      </div>
+</body>
+</html>

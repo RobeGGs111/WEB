@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <link rel="stylesheet" href="style/ajustesS.css">
+</head>
+<body>
+    
+<nav class="navbar">
+        <div class="logo">Los 6 Hermanos</div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+            <button><img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="Buscar" width="20"></button>
+        </div>
+        <div class="icons">
+            <a href="carrito.html"><img src="imgs/carrito.png" alt="Carrito"></a>
+            <div class="menu-icon">
+                <img src="imgs/menu.png" alt="Menú">
+                <div class="sidebar">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li style="text-align: center;"><a>Mi Cuenta</a></li>
+                        <li><br></li>
+                        <li><a href="catalogo.html">Inicio</a></li>
+                        <li><a href="iniciar_sesion.html">Iniciar Sesion</a></li>
+                        <li><a href="registro.html">Crear Cuenta</a></li>
+                        <li><a href="ajustes.html">Configuración</a></li>
+                        <li><a href="Favoritos.html">Favoritos</a></li>
+                        <li><a href="Compra.html">Mis compras</a></li>
+                        <li><a href="propuesta.html">Notificaciones</a></li>
+                        <li><a href="IngresoProd.html">Ingresar Producto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Configuración</h1>
+
+        <div class="setting">
+            <h2>Brillo</h2>
+            <label for="brightness">Ajustar brillo:</label>
+            <input type="range" id="brightness" name="brightness" min="0" max="100">
+        </div>
+
+        <div class="setting">
+            <h2>Notificaciones</h2>
+            <label for="notifications">Aceptar notificaciones:</label>
+            <input type="checkbox" id="notifications" name="notifications">
+        </div>
+
+        <div class="setting">
+            <h2>Idioma</h2>
+            <label for="language">Seleccionar idioma:</label>
+            <select id="language" name="language">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+                <option value="fr">Francés</option>
+                <option value="de">Alemán</option>
+            </select>
+        </div>
+
+        <div class="setting">
+            <h2>Privacidad</h2>
+            <label for="privacy-options">Opciones de privacidad:</label><br>
+            <input type="checkbox" id="data-tracking" name="privacy"> Habilitar seguimiento de datos<br>
+            <input type="checkbox" id="cookies" name="privacy"> Aceptar cookies
+        </div>
+
+        <div class="setting">
+            <h2>Tema</h2>
+            <label for="dark-mode">Modo oscuro:</label>
+            <input type="checkbox" id="dark-mode" name="dark-mode">
+        </div>
+
+        <div class="setting">
+            <h2>Accesibilidad</h2>
+            <label for="accessibility-options">Opciones de accesibilidad:</label><br>
+            <input type="checkbox" id="large-font" name="accessibility"> Activar fuente grande<br>
+            <input type="checkbox" id="screen-reader" name="accessibility"> Habilitar lector de pantalla c
+        </div>
+
+        <a href="#" class="button">Guardar ajustes</a>
+    </div>
+</body>
+</html>

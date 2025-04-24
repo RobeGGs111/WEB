@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #FFFFFF; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #272424; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 720px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 500px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 15px;
+}
+
+.icons img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    position: relative;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: -350px; /* Empieza fuera de la pantalla */
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    transition: transform 0.3s ease;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.sidebar ul li a:hover {
+    color: #f0a500;
+}
+
+/* Al pasar el cursor sobre el ícono del menú, la barra lateral se mueve hacia la vista */
+.menu-icon:hover .sidebar {
+    transform: translateX(-350px); /* Cambio a transform para una animación más fluida */
+}
+
+h1 {
+    color: #FF8C00; 
+    text-align: center;
+    text-decoration: #FF8C00;
+}
+
+h2 {
+    color: #FF8C00;
+    border-bottom: 1px solid #FF8C00;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-decoration: #E67800;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #FF8C00;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #FF8C00;
+    border-radius: 5px;
+    background-color: #FFFFFF; 
+    color: #272424; 
+}
+
+
+label[for="accessibility-options"], label[for="privacy-options"] {
+    color: #FFFFFF;
+}
+
+input[type="checkbox"]#large-font,
+input[type="checkbox"]#screen-reader,
+input[type="checkbox"]#data-tracking,
+input[type="checkbox"]#cookies {
+    accent-color: #FFFFFF; /* Cambia el color de los checkboxes a blanco */
+}
+
+.button {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    color: #FFFFFF; 
+    background-color: #FF8C00; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+.button:hover {
+    background-color: #E67800; 
+}
+
+.setting {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
